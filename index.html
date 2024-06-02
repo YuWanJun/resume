@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <div class="app flex items-center flex-col">
+  <div class="app size-full flex items-center flex-col">
     <div class="resume h-full shadow-xl shadow-blue-500/50">
       <div class="base w-full h-[230px] text-white bg-[#3978a3] flex flex-nowrap">
         <table class="w-9/12 h-[185px] ml-[40px] mt-[15px] border-collapse">
@@ -343,9 +343,13 @@
   /* 手机设备 */
   @media only screen and (max-width: 600px) {
 
+    .app {
+      min-width: 1000px;
+    }
     /* 样式规则 */
     .resume {
       width: 100%;
+      overflow-x: auto;
     }
   }
 
